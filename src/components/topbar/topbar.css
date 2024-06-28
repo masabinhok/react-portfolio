@@ -1,0 +1,23 @@
+.topbar {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbarLeft {
+  flex: 1;
+}
+
+.topbarRight {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.topbarLogo {
+  font-size: 50px;
+  font-weight: 700;
+}
