@@ -5,7 +5,11 @@ export default function Topbar() {
   return (
     <div className="topbar">
       <div className="topbarLeft">
-        <span className="topbarLogo">Sabin.</span>
+      <Button name="Home" color="red" />
+      <Button name="Projects" color="green" />
+      </div>
+      <div className="topbarCenter">
+        <span className="centerText">FRONTEND</span>
       </div>
       <div className="topbarRight">
         <Button name="Resume" color="red" />

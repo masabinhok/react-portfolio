@@ -1,6 +1,6 @@
 .homeContainer
 {
-  width:100wh;
+  width:100vw;
   height:100vh;
   background: url('../../src/assets/sabin.png') no-repeat;
   background-size: cover;
