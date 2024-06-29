@@ -3,6 +3,7 @@
   position: relative;
   display: inline-block;
   padding: 15px 30px;
+  width:fit-content;
   font-size: 20px;
   color: white;
   background: linear-gradient(45deg, #ff6f61, #de3e4f);
@@ -16,7 +17,7 @@
 
 .sparkle-button:hover {
   background: linear-gradient(45deg, #de3e4f, #ff6f61);
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .icon {
@@ -52,5 +53,5 @@
 
 
 .sparkle-button:active{
-  transform: scale(0.9);
+  transform: scale(0.99);
 }

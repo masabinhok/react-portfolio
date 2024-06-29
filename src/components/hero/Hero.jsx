@@ -1,22 +1,42 @@
-import './hero.css'
+import Techstack from "../../sub-components/techstack/Techstack";
+import "./hero.css";
+import Button from "../../sub-components/button/Button";
+import Social from "../../sub-components/socials/Social";
 
 export default function Hero() {
   return (
     <div className="heroPage">
       <div className="heroLeft">
         <span className="heroHeading">Hi, I am Sabin Shrestha</span>
-        <p className="heroIntro">I am a 19-year-old Computer Engineering student at Pulchowk, specializing in frontend development with a focus on creating dynamic, user-centric applications using React.</p>
+        <p className="heroIntro">
+          I am a 19-year-old Computer Engineering student at Pulchowk,
+          specializing in frontend development with a focus on creating dynamic,
+          user-centric applications using React.
+        </p>
+        <div className="socialButtons">
+          <Social social="linkedin" />
+          <Social social="twitter" />
+          <Social social="github" />
+        </div>
+        <Button name="Connect with me" color="green" />
+      </div>
+
+      <div className="heroCenter">
+        <div className="location">
+          <Social social="location (1)" />
+          <span className="centerText">Kathmandu, Nepal</span>
+        </div>
       </div>
       <div className="heroRight">
-        <img className='techskills'  src="../../../src/assets/html.png" />
-        <img className='techskills'  src="../../../src/assets/css.png" />
-        <img className='techskills'  src="../../../src/assets/js.png" />
-        <img className='techskills'  src="../../../src/assets/react.png" />
-        <img className='techskills'  src="../../../src/assets/github.png" />
-        <img className='techskills'  src="../../../src/assets/python.png" />
-        <img className='techskills'  src="../../../src/assets/c.png" />
-        <img className='techskills'  src="../../../src/assets/c-.png" />
+        <Techstack name="html" />
+        <Techstack name="css" />
+        <Techstack name="js" />
+        <Techstack name="react" />
+        <Techstack name="github" />
+        <Techstack name="python" />
+        <Techstack name="c" />
+        <Techstack name="c-" />
       </div>
     </div>
-  )
+  );
 }

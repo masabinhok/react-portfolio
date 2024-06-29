@@ -11,16 +11,19 @@
   display: flex;
   justify-content: flex-start;
   gap: 40px;
+  align-items: center;
 }
 
 .topbarCenter{
   flex:1;
-  color:white;
+  color:rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   font-size:100px;
   font-weight: 700;
   letter-spacing: 8px;
+  align-items: center;
+  z-index:100000;
   align-items: center;
 }
 
@@ -29,9 +32,19 @@
   display: flex;
   justify-content: flex-end;
   gap: 40px;
+  align-items: center;
 }
 
 .topbarLogo {
   font-size: 50px;
   font-weight: 700;
+}
+
+
+.signature{
+  width:200px;
+  object-fit: cover;
+  height:50px;
+  transform: scale(2);
+  filter:invert();
 }
