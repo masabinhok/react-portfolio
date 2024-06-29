@@ -35,7 +35,7 @@ export default function Topbar() {
         <div className="hamburger">
           <Profile />
           <div className="hamMenu">
-            <img src="../../../src/assets/more.png" alt="" />
+            <img src="assets/more.png" alt="" />
           </div>
         </div>
         // Or you can omit this div if there's no content to render
