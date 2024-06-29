@@ -58,18 +58,25 @@
   padding-left: 0px;
 }
 
+
+
+
 @media screen and (max-width: 768px) {
   .heroPage {
+    padding:16px;
     flex-direction: column;
     gap: 10px;
   }
 
+  
+
   .heroLeft {
-    margin-top: 150px;
+    margin-top: 250px;
     flex: 1;
   }
 
   .heroRight {
+    
     flex-direction: row;
     align-items: center;
     justify-content: center;

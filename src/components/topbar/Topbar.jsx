@@ -3,6 +3,7 @@ import Button from "../../sub-components/button/Button";
 
 import { useState, useEffect } from "react";
 import Profile from "../../sub-components/profile/Profile";
+import { Link } from "react-router-dom";
 
 export default function Topbar() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -21,12 +22,21 @@ export default function Topbar() {
       {!isSmallScreen ? (
         <>
           <div className="topbarLeft">
-            <Button name="Home" color="red" />
-            <Button name="About" color="orange" />
-            <Button name="Projects" color="green" />
+            <Link to="/">
+              <Button name="Home" color="red" />
+            </Link>
+            <Link to="/about">
+              <Button name="About" color="orange" />
+            </Link>
+            <Link to="/projects">
+              <Button name="Projects" color="green" />
+            </Link>
+            <Link to="/contact">
+              <Button name="Contact" color="green" />
+            </Link>
           </div>
           <div className="topbarRight">
-          <Profile />
+            <Profile />
             <Button name="Resume" color="red" />
             <Button name="Hire Me" color="green" />
           </div>

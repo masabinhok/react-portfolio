@@ -2,6 +2,7 @@ import Techstack from "../../sub-components/techstack/Techstack";
 import "./hero.css";
 import Button from "../../sub-components/button/Button";
 import Social from "../../sub-components/socials/Social";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -18,7 +19,8 @@ export default function Hero() {
           <Social social="twitter" />
           <Social social="github" />
         </div>
-        <Button name="Connect with me" color="green" />
+        <Link to='/contact'>
+        <Button name="Connect with me" color="green" /></Link>
       </div>
 
       <div className="heroCenter">
